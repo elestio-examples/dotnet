@@ -66,8 +66,11 @@ namespace dotnet.Controllers
                 Country = "",
                 Region = ""
             };
-
-            client.BaseAddress = new Uri("https://ipinfo.io/");
+            if (client.BaseAddress == null)
+            {
+                client.BaseAddress = new Uri("https://ipinfo.io/");
+            }
+            
             HttpResponseMessage response = await client.GetAsync(ip + "/json");
             if (response.IsSuccessStatusCode)
             {
