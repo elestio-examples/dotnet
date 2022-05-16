@@ -1,0 +1,20 @@
+config:
+  runTime: ".NET"
+  version: ""
+  framework: ""
+  buildCommand: "dotnet publish --configuration Release"
+  buildDir: "bin/Release/net6.0/publish"
+  runCommand: "dotnet bin/Release/net6.0/publish/dotnet.dll"
+ports:
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "443"
+    targetPort: "5000"
+    public: true
+    path: "/"
+    isAuth: false
+    login: ""
+    password: ""
+environments:
+  - key: "ENV"
+    value: "production"
