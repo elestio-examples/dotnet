@@ -1,0 +1,52 @@
+﻿<!-- Main content -->
+<header class="app-header">
+    <img src="images/elestio-logo.svg" alt="logo" />
+</header>
+
+<div class="app-body">
+    <div class="app-heading" style="margin-bottom: 40px;">
+        <h1>Welcome to Elestio - .NET</h1>
+        <h4>Deploy your apps quickly with the easiest CI/CD system</h4>
+    </div>
+
+    <p class="app-info-block">
+        This Host <strong class="subVal" id="host">@ViewBag.Host</strong>
+    </p>
+
+    <p class="app-info-block">
+        Your IP <strong class="subVal" id="yourIP">@ViewBag.ClientIp</strong>
+    </p>
+
+    @if (@ViewBag.Location != "?")
+    {
+        <p class="app-info-block">
+            Your Location <strong class="subVal" id="location">@ViewBag.Location</strong>
+        </p>
+    }
+
+    <p class="app-info-block">
+        Latency to server <strong class="subVal" id="latency">? ms</strong>
+    </p>
+
+    <div class="app-deploy">
+        <a href="https://dash.elest.io/deploy?source=cicd&social=Github&url=https://github.com/elestio-examples/static" class="btn mb-10-m btn-try">
+            Deploy on Elestio
+        </a>
+    </div>
+</div>
+
+<!-- BG Anim -->
+<div class="area">
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
