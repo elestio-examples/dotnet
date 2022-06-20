@@ -6,7 +6,7 @@ Click on the button below to deploy this repository with CI/CD on Elestio:
 
 <a href="https://dash.elest.io/deploy?source=cicd&social=Github&url=https://github.com/elestio-examples/dotnet"><img src="wwwroot\images\deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
 
-<img src="wwwroot\images\dotnet.png" alt="screenshot of the Dotnet app" width="100%" />
+<img src="wwwroot\images\screenshot.jpg" alt="screenshot of the Dotnet app" width="100%" />
 
 # Steps to clone this repository and run locally
 
