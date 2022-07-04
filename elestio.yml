@@ -5,6 +5,8 @@ config:
   buildCommand: "dotnet publish --configuration Release"
   buildDir: "bin/Release/net6.0/publish"
   runCommand: "dotnet bin/Release/net6.0/publish/dotnet.dll"
+  icon: "wwwroot/images/Dotnet.svg"
+  screenshot: "wwwroot/images/screenshot.jpg"
 ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
@@ -23,3 +25,6 @@ exposedPorts:
 environments:
   - key: "ENV"
     value: "production"
+webUI:
+  - url: "https://[CI_CD_DOMAIN]"
+    label: "Website"
